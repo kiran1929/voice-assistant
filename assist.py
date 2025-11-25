@@ -4,6 +4,7 @@ from Salaar import infow  # class import
 import webbrowser
 
 # Initialize the text-to-speech engine
+
 engine = p.init()
 engine.setProperty('rate', 130)  # Set the speed of voice
 voices = engine.getProperty('voices')  # Get available voices
@@ -96,6 +97,6 @@ def main():
         elif "exit" in text2:
             speak("Goodbye!")
             break
-
+            
 if __name__ == "__main__":
     main()
