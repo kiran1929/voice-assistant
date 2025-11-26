@@ -23,6 +23,7 @@ class infow:
             enter = self.driver.find_element(By.XPATH, '//*[@id="search-form"]/fieldset/button')
             enter.click()
         except Exception as e:
+            
             print(f"An error occurred while searching Wikipedia: {e}")
 
     def get_data(self, query):
@@ -35,6 +36,7 @@ class infow:
             enter = self.driver.find_element(By.XPATH, '//*[@id="main"]/article/div[1]/div/div[1]/div/form/div')
             enter.click()
         except Exception as e:
+            
             print(f"An error occurred while querying OpenAI: {e}")
 
     def play_video(self, query):
